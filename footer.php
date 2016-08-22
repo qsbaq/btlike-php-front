@@ -1,7 +1,7 @@
 
     <footer class="footer middle">
         <div class="container">
-            <p class="text-muted">@2016 <a href="<?php echo DOMAIN_PATH;?>"><?php echo TITLE;?></a></p>
+            <p class="text-muted">@2016 <a href="<?php echo DOMAIN_PATH;?>"><?php echo TITLE;?></a> <a href="<?php echo DOMAIN_PATH?>analytics.php">爬虫统计</a></p>
             <?php echo STATISTICS;?>
         </div>
     </footer>

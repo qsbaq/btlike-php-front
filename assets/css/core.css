@@ -1,0 +1,194 @@
+/* Space out content a bit */
+
+body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Custom page header */
+
+.header {
+    padding-bottom: 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.index-header {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Custom page header */
+
+.index-header {
+    padding-bottom: 50px;
+}
+
+
+/* Make the masthead heading the same height as the navigation */
+
+
+/* Custom page footer */
+
+.footer {
+    /*position: fixed;*/
+    padding-top: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    /*background: #e5e5e5;*/
+}
+.footer> .container {
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
+}
+
+
+.search {
+    padding-top: 10px;
+}
+.search-btn {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    margin-left: 10px;
+}
+
+.index-search-btn {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+}
+
+.custom-panel {
+    padding-top: 10px;
+}
+.listinfo {
+    padding-right: 15px;
+}
+.middle {
+    text-align: center;
+    display: table width: auto margin-left: auto margin-right: auto
+}
+.infohash-button {
+    float: left;
+    margin-right: 10px;
+}
+.logo {
+    padding-top: 60px;
+    padding-bottom: 0px;
+}
+
+.title {
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+html, body {
+    height: 100%;
+}
+.content {
+    min-height: 98%;
+}
+.square {
+    border-radius: 0px;
+}
+.search-title {
+    padding-top: 4px;
+}
+.search-title-input {
+    width: 380px !important;
+}
+.result-title {
+    /*color: #4887a8 !important;*/
+}
+.menu-nav {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #fff;
+}
+.menu-nav a {
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+    margin-right: 11px;
+    padding: 0px 3px;
+}
+.menu-nav a:hover {
+    text-decoration: none;
+    color: #000;
+}
+.menu-nav a.selected {
+    font-weight: bold;
+    color: #5CB85C;
+    border-bottom: 3px solid #5CB85C;
+}
+.result-pagination a {
+    display: inline-block;
+    font-size: 14px;
+    /*margin-right: 8px;*/
+    font-weight: normal;
+}
+.result-pagination li.active a {
+    /*background: #4887a8;*/
+}
+
+
+.recommend {
+  margin-top: 10px;
+}
+
+
+.recommend a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #5CB85C;
+}
+
+.recommend a span{
+  margin-left: 8px;
+}
+
+.trend{
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+.trend a{
+  font-size: 18px;
+  color: #5CB85C;
+  text-decoration: none;
+}
+
+
+.trend-list{
+  padding-right: 50px;
+  padding-top: 7px;
+}
+
+.trend-list a{
+  font-size: 18px;
+  color: #5CB85C;
+  text-decoration: none;
+}
+
+.about{
+  margin-top: 30px;
+}
+a:hover {
+    /*text-decoration: none;*/
+}
+
+@media screen and (max-width:600px) {
+    .col-xs-6{ width:auto;}
+}

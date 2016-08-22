@@ -15,7 +15,29 @@ define('KEYWORDS','BT搜索,Magnet磁力搜索,电影下载,电视剧在线播�
 // 定义域名路径
 define('DOMAIN_PATH','//btmoster.com/');
 // 定义API路径
-define('API_PATH','http://api.btlike.com/');
+//define('API_PATH','http://api.btlike.com/');
+define('API_PATH','http://btmoster.com:8088/');
+
+// 定义数据库地址
+define('HOSTNAME','127.0.0.1');
+// 定义数据库用户名
+define('DBUSERNAME','torrent');
+// 数据库密码
+define('DBPASSWD','数据库密码');
+// 定义数据库名
+define('DBNAME','torrent');
+
+/*
+ * 第一个参数是mysql:host,第二是dbname,第三个账户名，第四个密码
+ */
+try {
+    $pdo = new PDO('mysql:host='.HOSTNAME.';dbname='.DBNAME, DBUSERNAME, DBPASSWD);
+} catch (PDOException $e) {
+    echo 'Connection failed: ' . $e->getMessage();
+}
+
+// 定义torrent表名
+$TBAry = array('0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f');
 
 // 定义统计代码
 define('STATISTICS', '<script>
@@ -28,4 +50,3 @@ var _hmt = _hmt || [];
 })();
 </script>
 ');
-
