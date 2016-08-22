@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <?php  require_once 'config.php';
+            require_once 'functions.php';
+            if($_GET['hash']){
+                $hash = $_GET['hash'];
+                $singleAry = json_decode(http_curl_get( 'detail?id='.$hash ) ,true);
+                $title = $singleAry['Name'].'_'.TITLE;
+                $keywords = $singleAry['Name'].',';
+            }elseif($_GET['keyword']){
+                $keyword = $_GET['keyword'];
+                $title = $keyword.'_'.TITLE;  
+                $keywords = $keyword.',';
+            }
+            $title .= TITLE.'-'.DESCRIPTION;
+            $keywords .= KEYWORDS;
+            
+
+    ?>
+    <title><?php echo $title;?></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="<?php echo $keywords;?>" />
+    <meta name="description" content="<?php echo DESCRIPTION;?>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="<?php echo DOMAIN_PATH;?>assets/css/core.css" rel="stylesheet">
+    <link rel="shortcut icon" href="<?php echo DOMAIN_PATH;?>assets/img/favicon.ico" />
+
+</head>
+
+<body>
