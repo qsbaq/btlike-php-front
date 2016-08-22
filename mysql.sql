@@ -1,11 +1,11 @@
 --
--- 数据库: `torrent`
+-- 脢媒戮脻驴芒: `torrent`
 --
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `analytics`
+-- 卤铆碌脛陆谩鹿鹿 `analytics`
 --
 
 CREATE TABLE IF NOT EXISTS `analytics` (
@@ -13,5 +13,6 @@ CREATE TABLE IF NOT EXISTS `analytics` (
   `a_time` date NOT NULL,
   `rows` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `a_time` (`a_time`)
+  UNIQUE KEY `a_time` (`a_time`),
+  KEY `a_time_2` (`a_time`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
