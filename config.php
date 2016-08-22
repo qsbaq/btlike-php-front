@@ -23,7 +23,7 @@ define('HOSTNAME','127.0.0.1');
 // 定义数据库用户名
 define('DBUSERNAME','torrent');
 // 数据库密码
-define('DBPASSWD','数据库密码');
+define('DBPASSWD','jjjjjj');
 // 定义数据库名
 define('DBNAME','torrent');
 

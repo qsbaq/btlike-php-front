@@ -26,7 +26,7 @@ require_once 'functions.php';
     <td>爬虫数目</td>
   </tr>
 <?php
-$sql = "SELECT * FROM `analytics` ORDER BY a_time DESC LIMIT 30";
+$sql = "SELECT * FROM `analytics` ORDER BY a_time asc LIMIT 30";
 $result = $pdo->prepare($sql);
 $result->execute();
 $aAray = $result->fetchAll();
