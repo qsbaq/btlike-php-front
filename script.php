@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
 /*
  * 用于数据统计爬虫数据
@@ -26,7 +27,7 @@ $insertId = $result->fetchColumn();
 if( $insertId ){//更新原记录
     $sql = "UPDATE `analytics` set rows='{$rowsNumber}' WHERE id='{$insertId}'";
     $result = $pdo->query($sql);
-    echo $date.'->'.$rowsNumber.' Update Finished.';        
+    echo $date.'->'.$rowsNumber.' 数据更新完成.';        
 }else{        
     //数据插入
     //准备SQL语句
@@ -35,7 +36,7 @@ if( $insertId ){//更新原记录
     $stmt = $pdo->prepare($sql);
     //传递一个数组为预处理查询中的命名参数绑定值，并执行SQL
     $stmt->execute(array(':a_time' => $date,':rows'=>$rowsNumber));
-    echo $date.'->'.$rowsNumber.' Add Finished.';
+    echo $date.'->'.$rowsNumber.' 数据添加完成.';
 }
 
 echo '<p><a href="'.DOMAIN_PATH.'">返回首页</a></p>';
