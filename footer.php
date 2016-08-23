@@ -70,7 +70,6 @@
         });
         
     </script>
-    <script src="<?php echo DOMAIN_PATH;?>assets/js/core.js"></script>
     <script src="<?php echo DOMAIN_PATH;?>assets/js/list.js"></script>
     <script src="<?php echo DOMAIN_PATH;?>assets/js/string.js"></script>
 </body>

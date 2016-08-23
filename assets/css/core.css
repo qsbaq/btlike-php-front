@@ -188,7 +188,7 @@ html, body {
 a:hover {
     /*text-decoration: none;*/
 }
-
+li.jjump{ font-size: 14px; margin-left: 12px; line-height: 36px;}
 @media screen and (max-width:600px) {
     .col-xs-6{ width:auto;}
 }
