@@ -42,4 +42,4 @@ if( !$rowsNumber ){
     $stmt->execute(array(':a_time' => $date,':rows'=>$rowsNumber));
     echo $date.'->'.$rowsNumber.' 统计数据添加完成.';
 }
-echo '<p><a href="'.DOMAIN_PATH.'">返回首页</a> , <a href="javascript:window.history.go(-1);">返回前一页</a></p>';
+echo '<p><a href="'.DOMAIN_PATH.'">首页</a> , <a href="'.DOMAIN_PATH.'analytics.php">返回索引统计页</a></p>';

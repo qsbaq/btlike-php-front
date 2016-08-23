@@ -11,7 +11,7 @@ require_once 'functions.php';
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>爬虫统计_<?php echo TITLE;?></title>
+<title>爬虫索引统计_<?php echo TITLE;?></title>
 <script type="text/javascript" src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
 <style>
@@ -31,7 +31,7 @@ require_once 'functions.php';
 <table border="1">
   <tr>
     <td>时间</td>
-    <td>爬虫数目</td>
+    <td>索引</td>
   </tr>
 <?php
 $sql = "SELECT * FROM `analytics` ORDER BY a_time asc LIMIT 30";
@@ -42,12 +42,17 @@ $rNums = count($aAray);
 for ($i=0;$i<$rNums;$i++){
     $aDate[] = $aAray[$i]['a_time'];
     $aRows .= $aAray[$i]['rows'].',';
+    $aAll += $aAray[$i]['rows'];
 ?>    
   <tr>
       <td><a href="<?php echo DOMAIN_PATH;?>script.php?date=<?php echo $aAray[$i]['a_time']?>"><?php echo $aAray[$i]['a_time']?></a></td>
-    <td><?php echo $aAray[$i]['rows']?></td>
+    <td><?php echo number_format($aAray[$i]['rows']);?></td>
   </tr>
 <?php } ?>    
+    <tr>
+        <td></td>
+        <td>共计：<?php echo number_format($aAll);?></td>
+    </tr>
 </table>
 
 
