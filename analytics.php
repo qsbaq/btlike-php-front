@@ -14,12 +14,20 @@ require_once 'functions.php';
 <title>爬虫统计_<?php echo TITLE;?></title>
 <script type="text/javascript" src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
-<style>.jads{ text-align: center;}</style>
+<style>
+.jads{ text-align: center;}
+.jads table { margin: 0 auto; width: 600px;}
+</style>
 </head>
 
 <body>
-    <div class="jads">
+<div class="jads">
+    
 <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<p>本页面仅作展示使用，请定时或手动运行<a href="<?php echo DOMAIN_PATH;?>script.php">script.php</a>页面进行统计更新</p>
+<p><a href="<?php echo DOMAIN_PATH;?>">返回首页</a></p>
+
 <table border="1">
   <tr>
     <td>时间</td>
@@ -36,14 +44,14 @@ for ($i=0;$i<$rNums;$i++){
     $aRows .= $aAray[$i]['rows'].',';
 ?>    
   <tr>
-    <td><?php echo $aAray[$i]['a_time']?></td>
+      <td><a href="<?php echo DOMAIN_PATH;?>script.php?date=<?php echo $aAray[$i]['a_time']?>"><?php echo $aAray[$i]['a_time']?></a></td>
     <td><?php echo $aAray[$i]['rows']?></td>
   </tr>
 <?php } ?>    
 </table>
-<p>本页面仅作展示使用，后端统计功能请定时运行<a href="<?php echo DOMAIN_PATH;?>script.php">script.php</a>页面</p>
-<p><a href="<?php echo DOMAIN_PATH;?>">返回首页</a></p>
-    </div>
+
+
+</div>
 </body>
 <script type="text/javascript">
 $(function () {

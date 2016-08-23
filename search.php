@@ -50,7 +50,7 @@ if($listAry['Count'] == 0 || $listNums == 0){
                     文件大小:<span class="listinfo"><?php echo getSize($v['Length']);?></span>
                     下载热度:<span class="listinfo"><?php echo $v['Heat'];?></span>
                     文件数:<span class="listinfo"><?php echo $v['FileCount'];?></span>
-                    创建时间:<span class="listinfo"><?php echo substr($v['CreateTime'],0,2);?></span>
+                    创建时间:<span class="listinfo"><?php echo substr($v['CreateTime'],0,10);?></span>
                     <p></p><br>
                 <?php }?>
                 </div>
