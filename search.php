@@ -37,10 +37,10 @@ if($listAry['Count'] == 0 || $listNums == 0){
             <div class="col-xs-6 col-md-1"></div>
             <div class="col-xs-6 col-md-7">
                 <div class="row-fluid menu-nav">
-                    <a href="<?php echo DOMAIN_PATH.'search.php?keyword='.$keyword.'&page='.$page.'&order=';?>" id="order-x">相关度</a>
-                    <a href="<?php echo DOMAIN_PATH.'search.php?keyword='.$keyword.'&page='.$page.'&order=h';?>" id="order-h">下载热度</a>
-                    <a href="<?php echo DOMAIN_PATH.'search.php?keyword='.$keyword.'&page='.$page.'&order=m';?>" id="order-m">文件大小</a>
-                    <a href="<?php echo DOMAIN_PATH.'search.php?keyword='.$keyword.'&page='.$page.'&order=l';?>" id="order-l">创建时间</a>
+                    <a href="<?php echo DOMAIN_PATH.'search.php?keyword='.$keyword.'&page='.$page.'&order=x';?>" id="order-x" <?php if($order == 'x' || $order == '') echo 'class=selected';?>>相关度</a>
+                    <a href="<?php echo DOMAIN_PATH.'search.php?keyword='.$keyword.'&page='.$page.'&order=h';?>" id="order-h" <?php if($order == 'h') echo 'class=selected';?>>下载热度</a>
+                    <a href="<?php echo DOMAIN_PATH.'search.php?keyword='.$keyword.'&page='.$page.'&order=m';?>" id="order-m" <?php if($order == 'm') echo 'class=selected';?>>文件大小</a>
+                    <a href="<?php echo DOMAIN_PATH.'search.php?keyword='.$keyword.'&page='.$page.'&order=l';?>" id="order-l" <?php if($order == 'l') echo 'class=selected';?>>创建时间</a>
                 </div>
                 </br>
                 <div id="list-panel">

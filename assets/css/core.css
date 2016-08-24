@@ -191,4 +191,6 @@ a:hover {
 li.jjump{ font-size: 14px; margin-left: 12px; line-height: 36px;}
 @media screen and (max-width:600px) {
     .col-xs-6{ width:auto;}
+    .col-md-3,.col-md-8{ padding-left: 0; padding-right: 0px;}
+    .panel-body{ padding: 0px;}
 }

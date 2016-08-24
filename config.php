@@ -14,7 +14,7 @@ define('DESCRIPTION','BTMoster是收录最快，最全的bt搜索引擎。');
 // 定义关键词
 define('KEYWORDS','BT搜索,Magnet磁力搜索,电影下载,电视剧在线播放,在线观看');
 // 定义域名路径
-define('DOMAIN_PATH','//btmoster.com/');
+define('DOMAIN_PATH','//btmoster/');
 // 定义API路径
 //define('API_PATH','http://api.btlike.com/');
 define('API_PATH','http://btmoster.com:8088/');
@@ -22,7 +22,7 @@ define('API_PATH','http://btmoster.com:8088/');
 
 
 // 定义数据库地址
-define('HOSTNAME','127.0.0.1');
+define('HOSTNAME','btmoster.com');
 // 定义数据库用户名
 define('DBUSERNAME','torrent');
 // 数据库密码

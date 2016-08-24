@@ -17,8 +17,6 @@
             }
             @$title .= TITLE.'-'.DESCRIPTION;
             @$keywords .= KEYWORDS;
-            
-
     ?>
     <title><?php echo $title;?></title>
     <meta name="keywords" content="<?php echo $keywords;?>" />
