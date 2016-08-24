@@ -12,7 +12,7 @@ require_once 'functions.php';
 $date = $_GET['date'] ? $_GET['date'] : date('Y-m-d',strtotime('-1 day'));
 
 
-
+$rowsNumber = 0;
 foreach($TBAry as $tKey => $tVal){
     $tb_name = 'torrent'.$tVal;
     $sql = "select count(id) from {$tb_name} where create_time LIKE '".$date."%'";

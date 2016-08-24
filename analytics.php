@@ -39,6 +39,9 @@ $result = $pdo->prepare($sql);
 $result->execute();
 $aAray = $result->fetchAll();
 $rNums = count($aAray);
+$aDate = array();
+$aRows = '';
+$aAll = 0;
 for ($i=0;$i<$rNums;$i++){
     $aDate[] = $aAray[$i]['a_time'];
     $aRows .= $aAray[$i]['rows'].',';

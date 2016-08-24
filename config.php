@@ -14,19 +14,19 @@ define('DESCRIPTION','BTMoster是收录最快，最全的bt搜索引擎。');
 // 定义关键词
 define('KEYWORDS','BT搜索,Magnet磁力搜索,电影下载,电视剧在线播放,在线观看');
 // 定义域名路径
-define('DOMAIN_PATH','//btmoster/');
+define('DOMAIN_PATH','//btmoster.com/');
 // 定义API路径
 //define('API_PATH','http://api.btlike.com/');
-define('API_PATH','http://btmoster.com:8088/');
+define('API_PATH','http://199.15.252.162:8088/');
 
 
 
 // 定义数据库地址
-define('HOSTNAME','btmoster.com');
+define('HOSTNAME','199.15.252.162');
 // 定义数据库用户名
-define('DBUSERNAME','torrent');
+define('DBUSERNAME','btmoster');
 // 数据库密码
-define('DBPASSWD','jjjjjj');
+define('DBPASSWD','up49Kej9BQgpQb3A');
 // 定义数据库名
 define('DBNAME','torrent');
 
@@ -56,7 +56,7 @@ try {
 } catch (PDOException $e) {
     echo 'Connection failed: ' . $e->getMessage();
 }
-
+$pdo->query('set names utf8');
 // 定义torrent表名
 $TBAry = array('0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f');
 

@@ -16,3 +16,5 @@ CREATE TABLE IF NOT EXISTS `analytics` (
   UNIQUE KEY `a_time` (`a_time`),
   KEY `a_time_2` (`a_time`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
+
+ALTER TABLE `recommend` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT;
