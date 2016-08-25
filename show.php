@@ -1,7 +1,7 @@
 <?php require_once 'header.php';
 $singleAry['Infohash'] = 'magnet:?xt=urn:btih:'.$singleAry['Infohash'];
 ?>
-    <div class="container-fluid content">
+    <div class="container-fluid content isShow">
         <div class="header">
             <nav>
                 <div class="navbar-header">
@@ -12,9 +12,6 @@ $singleAry['Infohash'] = 'magnet:?xt=urn:btih:'.$singleAry['Infohash'];
                     <div class="navbar-form  search-title">
                         <input type="text" class="form-control input-md input-search square search-title-input" id="search" placeholder="搜索电影，音乐，番号，软件 . . .">
                         <button class="btn btn-md btn-success search-btn square" onclick="onSearch(search,1,'')">搜索</button>
-                        <div class="navbar-right trend-list">
-                            <a href="<?php echo DOMAIN_PATH;?>ranking.php">热门排行</a>
-                        </div>
                     </div>
                 </div>
             </nav>
@@ -64,7 +61,6 @@ $singleAry['Infohash'] = 'magnet:?xt=urn:btih:'.$singleAry['Infohash'];
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-md-3"></div>
         </div>
     </div>
 <?php require_once 'footer.php';?>

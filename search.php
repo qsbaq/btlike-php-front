@@ -11,10 +11,9 @@ $listNums = $listAry['Count'];
 if($listAry['Count'] == 0 || $listNums == 0){
     LocationTo('404.php');
 }
+$is_search = true;
 ?>
-    <script src="<?php echo DOMAIN_PATH;?>assets/js/list.js"></script>
-
-    <div class="container-fluid content">
+    <div class="container-fluid content isSearch">
         <div class="header">
             <nav>
                 <div class="navbar-header">
@@ -25,16 +24,12 @@ if($listAry['Count'] == 0 || $listNums == 0){
                     <div class="navbar-form  search-title">
                         <input type="text" <?php if( $keyword ) echo "value='{$keyword}'";?> class="form-control input-md input-search square search-title-input" id="search" placeholder="搜索电影，音乐，番号，软件 . . .">
                         <button class="btn btn-md btn-success search-btn square" onclick="onSearch(search,1,'')">搜索</button>
-                        <div class="navbar-right trend-list">
-                            <a href="<?php echo DOMAIN_PATH;?>ranking.php">热门排行</a>
-                        </div>
                     </div>
                 </div>
 
             </nav>
         </div>
         <div class="row  custom-panel">
-            <div class="col-xs-6 col-md-1"></div>
             <div class="col-xs-6 col-md-7">
                 <div class="row-fluid menu-nav">
                     <a href="<?php echo DOMAIN_PATH.'search.php?keyword='.$keyword.'&page='.$page.'&order=x';?>" id="order-x" <?php if($order == 'x' || $order == '') echo 'class=selected';?>>相关度</a>
@@ -81,8 +76,6 @@ if($listAry['Count'] == 0 || $listNums == 0){
 
                     </ul>
                 </nav>
-            </div>
-            <div class="col-xs-6 col-md-4">
             </div>
         </div>
     </div>

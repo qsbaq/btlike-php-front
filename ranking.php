@@ -2,7 +2,7 @@
 $rankingAry = json_decode(http_curl_get('trend') ,true);
 ?>
 
-    <div class="container-fluid content">
+    <div class="container-fluid content isRanking">
       <div class="header">
           <nav>
               <div class="navbar-header">

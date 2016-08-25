@@ -25,10 +25,11 @@ foreach($baAry as $bkey => $bval){
 }
 
 $wbAry = array('black_list'=>$bAry);
-$jjson = json_encode($wbAry);
+$jjson = json_encode($wbAry, JSON_UNESCAPED_UNICODE);
 
-$wbFile = fopen("wblist.json", "w") or die("Unable to open file!");
+$dFile = 'wblist.json';
+$wbFile = fopen($dFile, "w") or die("Unable to open file!");
 fwrite($wbFile, $jjson);
 fclose($wbFile);
-echo 'Json Write Successful.';
+echo '<p><a href="'.DOMAIN_PATH.$dFile.'">Json Write Successful.</a><p>';
 ?>

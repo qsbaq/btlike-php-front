@@ -10,9 +10,6 @@
 					<div class="navbar-form  search-title">
 						<input type="text" class="form-control input-md input-search square search-title-input" id="search" placeholder="搜索电影，音乐，番号，软件 . . .">
 						<button class="btn btn-md btn-success search-btn square" onclick="onSearch(search,1,'')">搜索</button>
-						<div class="navbar-right trend-list">
-							<a href="<?php echo DOMAIN_PATH.'ranking.php';?>">热门排行</a>
-						</div>
 					</div>
 				</div>
 			</nav>
