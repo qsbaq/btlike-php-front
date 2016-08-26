@@ -16,7 +16,8 @@ require_once 'functions.php';
 <script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
 <style>
 .jads{ text-align: center;}
-.jads table { margin: 0 auto; width: 600px;}
+.jads table { margin: 0 auto; width: 600px; border:solid #e5e5e5; border-width: 1px 0px 0px 1px;}
+.jads table td{border:solid #e5e5e5; border-width: 0px 1px 1px 0px;}
 </style>
 </head>
 
@@ -28,9 +29,9 @@ require_once 'functions.php';
 <p>本页面仅作展示使用，请定时或手动运行<a href="<?php echo DOMAIN_PATH;?>script.php">script.php</a>页面进行统计更新</p>
 <p><a href="<?php echo DOMAIN_PATH;?>">返回首页</a></p>
 
-<table border="1">
+<table>
   <tr>
-    <td>时间</td>
+    <td>日期</td>
     <td>索引</td>
   </tr>
 <?php

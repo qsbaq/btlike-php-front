@@ -1,4 +1,6 @@
 <?php
+if( !defined('Access') )die('Access Definded.');
+
 function http_curl_get($url,$pre=API_PATH){
 //    echo $pre.$url;
     //初始化
@@ -35,4 +37,12 @@ function getSize($size) {
 function LocationTo($url,$pre=DOMAIN_PATH){
     header("Location: {$pre}{$url}");
     die();
+}
+
+function getProcessUrl($url){
+    if( REWRITE ){
+        $url = str_replace(array('.php','?','=','&'),array('','-','-','-'),$url);
+        $url .= '.html';
+        return DOMAIN_PATH.$url;
+    }else   return DOMAIN_PATH.$url;
 }

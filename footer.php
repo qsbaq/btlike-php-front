@@ -1,4 +1,4 @@
-
+<?php if( !defined('Access') )die('Access Definded.');?>
     <footer class="footer middle">
         <div class="container">
             <p>如果 <?php echo TITLE;?> 索引的内容链接侵犯了您的权益，请联系 admin#btmoster.com (#改成@)，我们承诺在3个工作日内删除相关的索引链接。</p>
@@ -9,25 +9,13 @@
     
     
     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+            <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
     <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
     <script src="<?php echo DOMAIN_PATH;?>assets/js/jquery.highlight.js"></script>
+    <!--<script src="<?php echo DOMAIN_PATH;?>assets/js/string.js"></script>-->
 
     <script type="text/javascript">   
-        function getUrlParameter(sParam) {
-            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-                sURLVariables = sPageURL.split('&'),
-                sParameterName,
-                i;
-
-            for (i = 0; i < sURLVariables.length; i++) {
-                sParameterName = sURLVariables[i].split('=');
-
-                if (sParameterName[0] === sParam) {
-                    return sParameterName[1] === undefined ? true : sParameterName[1];
-                }
-            }
-        };        
         window.onload = function() {
             document.getElementById("search").focus();
         };
@@ -43,37 +31,30 @@
             if (keyword === "") {
                 return;
             }
-            console.log("search.php?keyword=" + keyword + "&page=" + page + "&order=" + order);
-            window.location.href = "search.php?keyword=" + keyword + "&page=" + page + "&order=" + order;
+            var search = '<?php echo getProcessUrl('search.php?keyword={keyword}');?>';
+            url = search.replace("{keyword}", keyword); 
+            console.log( url );
+            window.location.href = url;
         }
         
-        var clipboard = new Clipboard('#btnCopy')
+        var clipboard = new Clipboard('#btnCopy');
         clipboard.on('success', function(e) {
             $('#btnCopy').tooltip('show');
-            setTimeout(sharedModal, 1000);
+//            setTimeout(sharedModal, 1000);
         })
-        $('#btnCopy').on('hidden.bs.tooltip', function() {
-            $('#btnCopy').tooltip('destroy');
-        })
+//        $('#btnCopy').on('hidden.bs.tooltip', function() {
+//            $('#btnCopy').tooltip('destroy');
+//        })
 
-        window.onload = function() {
-            document.getElementById("search").focus();
-        };
-        keyword = getUrlParameter("keyword")
-        $("#search").val(keyword);
-        $("#search").keypress(function() {
-            if (event.which == 13) {
-                onSearch(search, 1, "");
-            }
-        });
         <?php if( isset($keyword ))://关键词高亮?>
         $(document).ready(function(){
             var key = '<?php echo $keyword;?>';
             $('.isSearch #list-panel').highlight(key);//显示高亮
+            $('#search').val(key);
         });
         <?php endif;?>   
     </script>
-    <script src="<?php echo DOMAIN_PATH;?>assets/js/string.js"></script>
+
 </body>
 
 </html>

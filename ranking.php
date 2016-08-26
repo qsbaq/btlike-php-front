@@ -7,7 +7,7 @@ $rankingAry = json_decode(http_curl_get('trend') ,true);
           <nav>
               <div class="navbar-header">
                   <!-- <h3 class="text-muted"><a href="index.html">Btlike</a></h3> -->
-                  <a href="<?php echo DOMAIN_PATH;?>"><img src="<?php echo DOMAIN_PATH;?>assets/img/header.jpg" /></a>
+                  <a href="<?php echo DOMAIN_PATH;?>"><img src="<?php echo DOMAIN_PATH;?>assets/img/header.jpg" alt="<?php echo TITLE;?>" /></a>
               </div>
               <div class="collapse navbar-collapse">
                   <div class="navbar-form  search-title">
@@ -40,7 +40,7 @@ $rankingAry = json_decode(http_curl_get('trend') ,true);
                             $j = $i+1;
                             echo '<tr>';
                             echo "<td>{$j}</td>";
-                            echo "<td><a href='show.php?hash={$rankingAry[$i]['ID']}' title='{$rankingAry[$i]['Name']}'>{$rankingAry[$i]['Name']}</a></td>";
+                            echo "<td><a href='".getProcessUrl('show.php?hash='.$rankingAry[$i]['ID'])."' title='{$rankingAry[$i]['Name']}'>{$rankingAry[$i]['Name']}</a></td>";
                             echo "<td>{$rankingAry[$i]['Heat']}</td>";
                             echo "<td>".getSize($rankingAry[$i]['Length'])."</td>";
                             echo "<td>".substr($rankingAry[$i]['CreateTime'],0,10)."</td>";                            

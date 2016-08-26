@@ -1,5 +1,5 @@
 <?php require_once 'header.php';?>
-	<div class="container-fluid content">
+	<div class="container-fluid content isSearch">
 		<div class="header">
 			<nav>
 				<div class="navbar-header">

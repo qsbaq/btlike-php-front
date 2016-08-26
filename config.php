@@ -18,7 +18,11 @@ define('DOMAIN_PATH','//btmoster/');
 // 定义API路径
 //define('API_PATH','http://api.btlike.com/');
 define('API_PATH','http://199.15.252.162:8088/');
-
+/* 是否启用Rewrite
+ * true 启用
+ * false 不启用
+ */
+define('REWRITE',false);
 
 
 // 定义数据库地址
@@ -49,7 +53,7 @@ var _hmt = _hmt || [];
 /*-----------------------------------------------------------------------------------
  * 以下内容不用修改
  */
-
+define('Access',true);
 date_default_timezone_set('Asia/Shanghai'); 
 try {
     $pdo = new PDO('mysql:host='.HOSTNAME.';dbname='.DBNAME, DBUSERNAME, DBPASSWD);
