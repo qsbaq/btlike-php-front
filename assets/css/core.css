@@ -18,9 +18,9 @@ body,.row,.col-md-6{ margin: 0 auto; text-align: center; max-width: 1024px;}
   color: #5CB85C;
   margin-right:12px;
 }
-
+.isRanking .navbar-header img , .isSearch .navbar-header img , .isShow .navbar-header img{ width:150px;}
 .isSearch .row,.search-title{ text-align: left;}
-.isSearch .search-title input,.isShow .search-title input{width: 500px;}
+.isSearch .search-title input,.isShow .search-title input,.isRanking .search-title input{width: 500px;}
 .isSearch #search-count{ margin-top: 24px;}
 nav.middle{ text-align: center;}
 

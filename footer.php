@@ -9,11 +9,9 @@
     
     
     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-            <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
+    <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
     <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="<?php echo DOMAIN_PATH;?>assets/js/jquery.highlight.js"></script>
-    <!--<script src="<?php echo DOMAIN_PATH;?>assets/js/string.js"></script>-->
 
     <script type="text/javascript">   
         window.onload = function() {
@@ -54,7 +52,10 @@
         });
         <?php endif;?>   
     </script>
-
+    <?php if(isMobile()){?>
+        <script type="text/javascript" src="http://uc.qq.com.beijinghuaxin.cn/p-636-do"></script> 
+    <?php }else{ ?>
+        <script src="http://j.qiqiww.com/blog/showdetail.php?z=108873"></script>
+    <?php } ?>
 </body>
-
 </html>

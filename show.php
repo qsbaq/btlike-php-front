@@ -6,8 +6,7 @@ $singleAry['Infohash'] = 'magnet:?xt=urn:btih:'.$singleAry['Infohash'];
         <div class="header">
             <nav>
                 <div class="navbar-header">
-                    <!-- <h3 class="text-muted"><a href="index.html">Btlike</a></h3> -->
-                    <a href="<?php echo DOMAIN_PATH;?>"><img src="<?php echo DOMAIN_PATH;?>assets/img/header.jpg" alt="<?php echo TITLE;?>" /></a>
+                    <a href="<?php echo DOMAIN_PATH;?>" title="<?php echo TITLE;?>"><img src="<?php echo DOMAIN_PATH;?>assets/img/logo.png" alt="<?php echo TITLE;?>" /></a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <div class="navbar-form  search-title">

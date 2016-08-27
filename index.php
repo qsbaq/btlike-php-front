@@ -9,7 +9,7 @@ $recommendAry = json_decode(http_curl_get('recommend') ,true);
             <div class="col-xs-6 col-md-6">
                 <div class="middle">
                     <div class="logo">
-                        <a href="<?php echo DOMAIN_PATH;?>"><img src="<?php echo DOMAIN_PATH;?>assets/img/header.jpg" alt="<?php echo TITLE;?>" /></a>
+                        <a href="<?php echo DOMAIN_PATH;?>" title="<?php echo TITLE;?>"><img src="<?php echo DOMAIN_PATH;?>assets/img/logo.png" alt="<?php echo TITLE;?>" /></a>
                     </div>
                     <div class="middle title">
                         <p><?php echo DESCRIPTION;?></p>

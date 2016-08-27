@@ -3,9 +3,8 @@
 		<div class="header">
 			<nav>
 				<div class="navbar-header">
-					<!-- <h3 class="text-muted"><a href="index.html">Btlike</a></h3> -->
-					<a href="<?php echo DOMAIN_PATH;?>"><img src="<?php echo DOMAIN_PATH;?>assets/img/header.jpg" /></a>
-				</div>
+                                    <a href="<?php echo DOMAIN_PATH;?>" title="<?php echo TITLE;?>"><img src="<?php echo DOMAIN_PATH;?>assets/img/logo.png" alt="<?php echo TITLE;?>" /></a>
+                                </div>
 				<div class="collapse navbar-collapse">
 					<div class="navbar-form  search-title">
 						<input type="text" class="form-control input-md input-search square search-title-input" id="search" placeholder="搜索电影，音乐，番号，软件 . . .">
