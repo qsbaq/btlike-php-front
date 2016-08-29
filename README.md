@@ -6,4 +6,4 @@ https://github.com/btlike/release
 
 主页：http://www.jiloc.com/42558.html
 
-演示站点：http://btmoster.com
+演示站点：http://btlet.com
