@@ -53,10 +53,12 @@
         });
         <?php endif;?>   
     </script>
+    <!--//暂停广告位
     <?php if(isMobile()){?>
         <script type="text/javascript" src="http://uc.qq.com.beijinghuaxin.cn/p-636-do"></script> 
     <?php }else{ ?>
         <script src="http://j.qiqiww.com/blog/showdetail.php?z=108873"></script>
     <?php } ?>
+    -->
 </body>
 </html>
