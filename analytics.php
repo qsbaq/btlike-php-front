@@ -69,9 +69,8 @@ $(function () {
             text: '<?php echo TITLE;?>',
             x: -20 //center
         },
-        subtitle: {
-            text: 'Source: btmoster.com',
-            x: -20
+        credits: {  
+            enabled: false     //去掉highcharts网站url  
         },
         xAxis: {
             categories: <?php echo json_encode($aDate);?>
@@ -96,7 +95,7 @@ $(function () {
             borderWidth: 0
         },
         series: [{
-            name: 'btmoster.com 爬虫',
+            name: '<?php echo TITLE;?> 爬虫',
             data: [<?php echo rtrim($aRows,',');?>]
         }]
     });

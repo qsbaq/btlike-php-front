@@ -76,3 +76,4 @@ nav.middle{ text-align: center;}
 
 .highlight { color: red; font-weight:bold; }
 .jjump{ line-height:36px; margin-left: 12px;}
+.isAbout #list-panel img { margin: 12px auto 12px 24px; width:100%;}

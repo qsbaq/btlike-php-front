@@ -59,15 +59,13 @@ $singleAry['Infohash'] = 'magnet:?xt=urn:btih:'.$singleAry['Infohash'];
                             </ul>
                         </div>
                         <div class="panel panel-default">
-                            <div class="panel-heading">下载、在线观看</div>
+                            <div class="panel-heading">下载、在线观看,<a href="<?php echo DOMAIN_PATH;?>howtoplay.php">百度云盘在线播放教程.</a></div>
                             <div class="panel-body">
                                 <p><b>在线观看：</b>请复制磁力链接，使用<a href="http://115.com/" target="_blank">115离线下载</a>，<a href="http://pan.baidu.com/" target="_blank">百度网盘离线下载</a>或<a href="http://xunlei.com/" target="_blank">迅雷边下边看</a></p>
-                                </br>
                                 <p><b>下载：</b>点击【立即下载按钮】就会自动开始下载，或手动复制磁力链接到下载工具， <a href="http://www.utorrent.com/" target="_blank">μTorrent，</a>
                                     <a href="http://www.bitcomet.com" target="_blank">BitComet，</a>
                                     <a href="http://xunlei.com/" target="_blank">迅雷</a>
                                 </p>
-                                </br>
                             </div>
                         </div>                      
                     </div>

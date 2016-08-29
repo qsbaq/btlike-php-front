@@ -1,9 +1,9 @@
 <?php if( !defined('Access') )die('Access Definded.');?>
     <footer class="footer middle">
         <div class="container">
-            <p>如果 <?php echo TITLE;?> 索引的内容链接侵犯了您的权益，请联系 admin#btmoster.com (#改成@)，我们承诺在3个工作日内删除相关的索引链接。</p>
+            <p>如果 <?php echo TITLE;?> 索引的内容链接侵犯了您的权益，请联系 admin#btlet.com (#改成@)，我们承诺在7个工作日内删除相关的索引链接。</p>
             <p>友情链接：<a href="//btfast.com">BTFast</a> </p>
-            <p class="text-muted">@2016 <a href="<?php echo DOMAIN_PATH;?>"><?php echo TITLE;?></a> <a href="<?php echo DOMAIN_PATH;?>ranking.php">热门排行</a> <a href="<?php echo DOMAIN_PATH?>analytics.php">索引统计</a></p>
+            <p class="text-muted">@2016 <a href="<?php echo DOMAIN_PATH;?>"><?php echo TITLE;?></a> <a href="<?php echo DOMAIN_PATH;?>about.php">关于</a> <a href="<?php echo DOMAIN_PATH;?>ranking.php">热门排行</a> <a href="<?php echo DOMAIN_PATH?>analytics.php">索引统计</a></p>
             <?php echo STATISTICS;?>
         </div>
     </footer>
