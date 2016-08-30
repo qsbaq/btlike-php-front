@@ -3,7 +3,7 @@
         <div class="container">
             <p>如果 <?php echo TITLE;?> 索引的内容链接侵犯了您的权益，请联系 admin#btlet.com (#改成@)，我们承诺在7个工作日内删除相关的索引链接。</p>
             <!--/友情链接开始-->
-            <p>友情链接：<a href="//btfast.com" target="_blank">BTFast</a> </p>
+            <p>友情链接：<a href="//btlet.com" target="_blank">BtLet</a> <a href="//btfast.com" target="_blank">BTFast</a> </p>
             <!--/友情链接结束-->
             <p class="text-muted">@2016 <a href="<?php echo DOMAIN_PATH;?>"><?php echo TITLE;?></a> | <a href="<?php echo DOMAIN_PATH;?>about.php">关于</a> | <a href="<?php echo DOMAIN_PATH?>analytics.php">索引统计</a></p>
             <?php echo STATISTICS;?>
@@ -64,4 +64,10 @@
     <?php } ?>
     -->
 </body>
+<!--
+ * 开发：老季
+ * 网址：http://www.jiloc.com/42558.html
+ * 日期：2016/8/25
+ * >>>本程序为开源作品，如发生法律纠纷与作者无关!<<<
+-->
 </html>
