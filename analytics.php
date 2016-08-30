@@ -49,7 +49,8 @@ for ($i=0;$i<$rNums;$i++){
     $aAll += $aAray[$i]['rows'];
 ?>    
   <tr>
-      <td><a href="<?php echo DOMAIN_PATH;?>script.php?date=<?php echo $aAray[$i]['a_time']?>"><?php echo $aAray[$i]['a_time']?></a></td>
+    <!--<td><a href="<?php echo DOMAIN_PATH;?>script.php?date=<?php echo $aAray[$i]['a_time']?>"><?php echo $aAray[$i]['a_time']?></a></td>-->
+    <td><?php echo $aAray[$i]['a_time']?></td>
     <td><?php echo number_format($aAray[$i]['rows']);?></td>
   </tr>
 <?php } ?>    

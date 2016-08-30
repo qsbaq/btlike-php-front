@@ -24,14 +24,13 @@ foreach($TBAry as $tKey => $tVal){
 $sql = "SELECT id from `analytics` WHERE a_time='".$date."'";
 $result = $pdo->query($sql);
 $insertId = $result->fetchColumn();
-
+$string = '';
 if( !$rowsNumber ){
-    echo $date.' 无数据！';
-
+    $string = $date.' 无数据！';
 }elseif( $insertId ){//更新原记录
     $sql = "UPDATE `analytics` set rows='{$rowsNumber}' WHERE id='{$insertId}'";
     $result = $pdo->query($sql);
-    echo $date.'->'.$rowsNumber.' 统计数据更新完成.';        
+    $string = $date.'->'.$rowsNumber.' 统计数据更新完成.';        
 }else{        
     //数据插入
     //准备SQL语句
@@ -40,6 +39,7 @@ if( !$rowsNumber ){
     $stmt = $pdo->prepare($sql);
     //传递一个数组为预处理查询中的命名参数绑定值，并执行SQL
     $stmt->execute(array(':a_time' => $date,':rows'=>$rowsNumber));
-    echo $date.'->'.$rowsNumber.' 统计数据添加完成.';
+    $string = $date.'->'.$rowsNumber.' 统计数据添加完成.';
 }
-echo '<p><a href="'.DOMAIN_PATH.'">首页</a> , <a href="'.DOMAIN_PATH.'analytics.php">返回索引统计页</a></p>';
+$string .= '<p><a href="'.DOMAIN_PATH.'">首页</a> , <a href="'.DOMAIN_PATH.'analytics.php">返回索引统计页</a></p>';
+echo '<!--'.$string.'-->';
