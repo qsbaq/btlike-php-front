@@ -9,7 +9,7 @@ require_once 'config.php';
 require_once 'functions.php';
 
 // 默认统计昨天的爬虫
-$date = $_GET['date'] ? $_GET['date'] : date('Y-m-d',strtotime('-1 day'));
+@$date = $_GET['date'] ? $_GET['date'] : date('Y-m-d',strtotime('-1 day'));
 
 
 $rowsNumber = 0;
