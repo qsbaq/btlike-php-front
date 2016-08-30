@@ -26,7 +26,7 @@ require_once 'functions.php';
     
 <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
-<p>本页面仅作展示使用，请定时或手动运行<a href="<?php echo DOMAIN_PATH;?>script.php">script.php</a>页面进行统计更新</p>
+<!--<p>本页面仅作展示使用，请定时或手动运行<a href="<?php echo DOMAIN_PATH;?>script.php">script.php</a>页面进行统计更新</p>-->
 <p><a href="<?php echo DOMAIN_PATH;?>">返回首页</a></p>
 
 <table>
