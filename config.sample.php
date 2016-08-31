@@ -37,6 +37,13 @@ define('DBNAME','数据库名');
 
 
 
+// 定义友情链接
+// 格式：网址=>网站名
+$friendLink = array(
+    '//btlet.com'   => 'BtLet',
+);
+
+
 // 定义统计代码
 define('STATISTICS', '
 <script>
