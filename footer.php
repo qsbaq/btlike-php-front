@@ -2,7 +2,7 @@
     <footer class="footer middle">
         <div class="container">
             <p>如果 <?php echo TITLE;?> 索引的内容链接侵犯了您的权益，请联系 admin#btlet.com (#改成@)，我们承诺在7个工作日内删除相关的索引链接。</p>
-            <p><?php echo TITLE;?> 共计 <?php echo number_format($total);?> 条索引</p>
+            <p><?php echo TITLE;?> 已收录索引 <?php echo number_format($total);?> </p>
             <!--/友情链接开始-->
             <p>友情链接：<?php foreach($friendLink as $jLink => $jName):?><a href="<?php echo $jLink?>" target="_blank"><?php echo $jName;?></a> <?php endforeach;?></p>
             <!--/友情链接结束-->

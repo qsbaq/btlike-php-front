@@ -28,7 +28,7 @@
                     <h2>使用</h2>
                     <ol>
                     <li><?php echo TITLE;?> 索引的磁力链接，不能通过浏览器直接下载，需要<a href="http://www.xunlei.com/" target="_blank">迅雷</a>、<a href="http://xf.qq.com/">QQ旋风</a>、<a href="http://www.bitcomet.com/index-zh-cn.php">BitComet</a>等软件的支持</li>
-                    <li><?php echo TITLE;?> 不提供任何图片预览或视频播放功能，您可以使用<a href="/howtoplay.php">百度云</a>播放电影</li>
+                    <li><?php echo TITLE;?> 不提供任何图片预览或视频播放功能，您可以使用<a href="<?php echo DOMAIN_PATH;?>/howtoplay.php">百度云</a>播放电影</li>
                     <li><?php echo TITLE;?> 自动索引的链接，如果有版权归属和不良信息，请联系 admin@btlet.com ，承诺在7个工作日内删除相关索引</li>
                     </ol>
                     <h2>结果</h2>
