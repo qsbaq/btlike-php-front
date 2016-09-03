@@ -21,6 +21,9 @@
             }
             @$title .= TITLE.'-'.DESCRIPTION;
             @$keywords .= KEYWORDS;
+        //统计全部    
+        $statAry = json_decode(http_curl_get('state') ,true);
+        $total = $statAry['CountTorrent'];
     ?>
     <title><?php echo $title;?></title>
     <meta name="keywords" content="<?php echo $keywords;?>" />
