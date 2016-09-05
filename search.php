@@ -31,10 +31,10 @@ $is_search = true;
         <div class="row  custom-panel">
             <div class="col-xs-6 col-md-7">
                 <div class="row-fluid menu-nav">
-                    <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page='.$page.'&order=x');?>" id="order-x" <?php if($order == 'x' || $order == '') echo 'class=selected';?>>相关度</a>
-                    <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page='.$page.'&order=h');?>" id="order-h" <?php if($order == 'h') echo 'class=selected';?>>下载热度</a>
-                    <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page='.$page.'&order=m');?>" id="order-m" <?php if($order == 'm') echo 'class=selected';?>>文件大小</a>
-                    <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page='.$page.'&order=l');?>" id="order-l" <?php if($order == 'l') echo 'class=selected';?>>创建时间</a>
+                    <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page=1&order=x');?>" id="order-x" <?php if($order == 'x' || $order == '') echo 'class=selected';?>>相关度</a>
+                    <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page=1&order=h');?>" id="order-h" <?php if($order == 'h') echo 'class=selected';?>>下载热度</a>
+                    <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page=1&order=m');?>" id="order-m" <?php if($order == 'm') echo 'class=selected';?>>文件大小</a>
+                    <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page=1&order=l');?>" id="order-l" <?php if($order == 'l') echo 'class=selected';?>>创建时间</a>
                 </div>
                 <div id="list-panel">
                     <p id="search-count">搜索到 <?php echo $listNums;?> 个相关BT资源</p>
