@@ -19,9 +19,9 @@ $is_search = true;
             <div class="col-xs-6 col-md-7">
                 <div class="row-fluid menu-nav">
                     <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page=1&order=x');?>" id="order-x" <?php if($order == 'x' || $order == '') echo 'class=selected';?>>Related</a>
-                    <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page=1&order=h');?>" id="order-h" <?php if($order == 'h') echo 'class=selected';?>>Download Heat</a>
+                    <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page=1&order=h');?>" id="order-h" <?php if($order == 'h') echo 'class=selected';?>>Heat</a>
                     <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page=1&order=m');?>" id="order-m" <?php if($order == 'm') echo 'class=selected';?>>File Size</a>
-                    <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page=1&order=l');?>" id="order-l" <?php if($order == 'l') echo 'class=selected';?>>Creation Time</a>
+                    <a href="<?php echo getProcessUrl('search.php?keyword='.$keyword.'&page=1&order=l');?>" id="order-l" <?php if($order == 'l') echo 'class=selected';?>>Time</a>
                 </div>
                 <div id="list-panel">
                     <p id="search-count">Found <?php echo $listNums;?> items for <?php echo $keyword;?></p><br/>
@@ -55,7 +55,7 @@ $is_search = true;
             if($page < $page_count){
                 echo '<li><a href="'.getProcessUrl('search.php?keyword='.$keyword.'&page='.($page+1).'&order='.$order).'" aria-label="Next"><span>Next</span></a></li>';
             }
-            echo "<li class='jjump'>{$page} / {$page_count} , Total Pages {$listNums} </li>";
+            echo "<li class='jjump'>{$page} / {$page_count} , Total : {$listNums} </li>";
     ?>
 
                     </ul>
