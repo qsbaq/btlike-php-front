@@ -1,20 +1,7 @@
 <?php   require_once 'header.php';
 ?>
     <div class="container-fluid content isSearch isAbout">
-        <div class="header">
-            <nav>
-                <div class="navbar-header">
-                    <a href="<?php echo DOMAIN_PATH;?>" title="<?php echo TITLE;?>"><img src="<?php echo DOMAIN_PATH;?>assets/img/logo.png" alt="<?php echo TITLE;?>" /></a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <div class="navbar-form  search-title">
-                        <input type="text" class="form-control input-md input-search square search-title-input" id="search" placeholder="搜索电影，音乐，番号，软件 . . .">
-                        <button class="btn btn-md btn-success search-btn square" onclick="onSearch(search,1,'')">搜索</button>
-                    </div>
-                </div>
-
-            </nav>
-        </div>
+        <?php require_once 'nav_header.php';?>
         <div class="row  custom-panel">
             <div class="col-xs-6 col-md-7">
                 <div id="list-panel">

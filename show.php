@@ -3,19 +3,7 @@ $hash = $singleAry['Infohash'];
 $singleAry['Infohash'] = 'magnet:?xt=urn:btih:'.$singleAry['Infohash'];
 ?>
     <div class="container-fluid content isShow">
-        <div class="header">
-            <nav>
-                <div class="navbar-header">
-                    <a href="<?php echo DOMAIN_PATH;?>" title="<?php echo TITLE;?>"><img src="<?php echo DOMAIN_PATH;?>assets/img/logo.png" alt="<?php echo TITLE;?>" /></a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <div class="navbar-form  search-title">
-                        <input type="text" class="form-control input-md input-search square search-title-input" id="search" placeholder="搜索电影，音乐，番号，软件 . . .">
-                        <button class="btn btn-md btn-success search-btn square" onclick="onSearch(search,1,'')">搜索</button>
-                    </div>
-                </div>
-            </nav>
-        </div>
+        <?php require_once 'nav_header.php';?>
         <div class="row  custom-panel">
             <div class="col-xs-6 col-md-1"></div>
             <div class="col-xs-6 col-md-8">
@@ -25,22 +13,22 @@ $singleAry['Infohash'] = 'magnet:?xt=urn:btih:'.$singleAry['Infohash'];
                         <p></p>
                         </br>
                         <div class="panel panel-default">
-                            <div class="panel-heading">磁力链接</div>
+                            <div class="panel-heading">Magnet Link</div>
                             <div class="panel-body">
                                 <a href="<?php echo $singleAry['Infohash'];?>" id="magnet" title="<?php echo $singleAry['Name'];?>"><?php echo $singleAry['Infohash'];?></a>
                                 </br>
                                 </br>
                                 <button class="btn btn-success btn-md infohash-button square" data-clipboard-text="<?php echo $singleAry['Infohash'];?>" data-placement="bottom" id="btnCopy" title="已复制">
-                                    复制链接
+                                    Copy Magnet
                                 </button>
-                                <a href="<?php echo $singleAry['Infohash'];?>" title="<?php echo $singleAry['Name'];?>下载" type="button" class="btn btn-md btn-success infohash-button square" id="download">立即下载</a>
+                                <a href="<?php echo $singleAry['Infohash'];?>" title="<?php echo $singleAry['Name'];?>Download" type="button" class="btn btn-md btn-success infohash-button square" id="download">立即下载</a>
                             </div>
                         </div>
                         <table class="table table-bordered">
                             <tr>
-                                <td class="active">文件大小</td>
-                                <td class="active">文件数量</td>
-                                <td class="active">创建时间</td>
+                                <td class="active">File Size</td>
+                                <td class="active">Total Files</td>
+                                <td class="active">Creation Time</td>
                             </tr>
                             <tr>
                                 <td id="length"><?php echo getSize($singleAry['Length']);?></td>
@@ -50,7 +38,7 @@ $singleAry['Infohash'] = 'magnet:?xt=urn:btih:'.$singleAry['Infohash'];
                         </table>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">部分文件</div>
+                            <div class="panel-heading">Part of Files</div>
                             </p>
                             <ul id="file-list">
                                 <?php foreach($singleAry['Files'] as $key => $val ){ ?>

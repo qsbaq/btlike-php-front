@@ -1,14 +1,14 @@
 <?php if( !defined('Access') )die('Access Definded.');?>
     <footer class="footer middle">
         <div class="container">
-            <p>如果 <?php echo TITLE;?> 索引的内容链接侵犯了您的权益，请联系 admin#btlet.com (#改成@)，我们承诺在7个工作日内删除相关的索引链接。</p>
-            <p><?php echo TITLE;?> 已收录索引 <?php echo number_format($total);?> </p>
+            <p><?php echo TITLE;?> is a Torrent Search Engine based on DHT protocol. All resources are automatically indexed from the DHT network. Instead of torrent files, we store meta information only for indexing.</p>
+            <p><?php echo TITLE;?> Total indexing : <?php echo number_format($total);?> </p>
             <!--/友情链接开始-->
-            <p>友情链接：<?php foreach($friendLink as $jLink => $jName):?><a href="<?php echo $jLink?>" target="_blank"><?php echo $jName;?></a> <?php endforeach;?></p>
+            <p>Links：<?php foreach($friendLink as $jLink => $jName):?><a href="<?php echo $jLink?>" target="_blank"><?php echo $jName;?></a> <?php endforeach;?></p>
             <!--/友情链接结束-->
             <p class="text-muted">
                 @2016 <a href="<?php echo DOMAIN_PATH;?>"><?php echo TITLE;?></a>
-                 | <a href="<?php echo DOMAIN_PATH;?>about.php">关于</a>
+                 | <a href="<?php echo DOMAIN_PATH;?>about.php">About</a>
                 <!-- | <a href="<?php echo DOMAIN_PATH?>analytics.php">索引统计</a>-->
             </p>
             <?php echo STATISTICS;?>

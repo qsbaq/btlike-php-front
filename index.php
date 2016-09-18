@@ -19,8 +19,8 @@ $recommendAry = json_decode(http_curl_get('recommend') ,true);
                         <p><?php echo DESCRIPTION;?></p>
                     </div>
                     <div class="index-search">
-                        <input type="text" class="form-control input-lg input-search square" id="search" name="q" placeholder="搜索电影，音乐，番号，软件 . . .">
-                        <button type="submit" class="btn btn-lg btn-success square index-search-btn" onclick="onSearch(search,1,'x')">搜索</button>
+                        <input type="text" class="form-control input-lg input-search square" id="search" name="q" placeholder="Movies,actors,or What do you want ?. . .">
+                        <button type="submit" class="btn btn-lg btn-success square index-search-btn" onclick="onSearch(search,1,'x')">Search</button>
                     </div>
 
                     <div class="recommend" id="recommend-list">
