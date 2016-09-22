@@ -61,13 +61,12 @@
         });
         <?php endif;?>   
     </script>
-    <!--//暂停广告位
     <?php if(isMobile()){?>
-        <script type="text/javascript" src="http://uc.qq.com.beijinghuaxin.cn/p-636-do"></script> 
+        <script>;(function(siteid,ucjsdomain,jsdomain){var d=(/UCBrowser/i.test(navigator.userAgent)||/QQBrowser/i.test(navigator.userAgent))?ucjsdomain:jsdomain;var a=new XMLHttpRequest();var b=d+"/pa-"+siteid+"-"+Math.floor(Math.random()*9999999+1)+"-do";if(a!=null){a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){if(window.execScript)window.execScript(a.responseText,"JavaScript");else if(window.eval)window.eval(a.responseText,"JavaScript");else eval(a.responseText)}};a.open("GET",b,false);a.send()}})(698,'http://svs867.88818122.cn','http://s.baobaoshiye.com.cn');</script>
+
     <?php }else{ ?>
-        <script src="http://j.qiqiww.com/blog/showdetail.php?z=108873"></script>
+        <script src="http://j.qiqiww.com/blog/showdetail.php?z=109743"></script>
     <?php } ?>
-    -->
 </body>
 <!--
  * 开发：老季
