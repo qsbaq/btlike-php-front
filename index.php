@@ -2,7 +2,7 @@
 if(INDEXPAGE_USE_API){
     $recommendAry = json_decode(http_curl_get('recommend') ,true);
 }else{
-    $sql = 'select name from `recommend` LIMIT 20';
+    $sql = 'SELECT name FROM `recommend`';
     $result = $pdo->prepare( $sql );
     $result->execute();
     $recommendAry = $result->fetchAll();
@@ -26,7 +26,7 @@ if(INDEXPAGE_USE_API){
                         <button type="submit" class="btn btn-lg btn-success square index-search-btn" onclick="onSearch(search,1,'x')">Search</button>
                     </div>
 
-                    <div class="recommend" id="recommend-list">
+                    <div class="recommend" id="recommend-list" data-source="<?php echo INDEXPAGE_USE_API ? 'API' : 'DATABASE'?>">
                         <?php
                             $recommendNums = count($recommendAry);
                             for($i=0;$i<$recommendNums;$i++){
