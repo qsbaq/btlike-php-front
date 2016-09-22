@@ -1,9 +1,12 @@
 <?php require_once 'header.php';
-$recommendAry = json_decode(http_curl_get('recommend') ,true);
-//$sql = 'select name from `recommend` LIMIT 20';
-//$result = $pdo->prepare( $sql );
-//$result->execute();
-//$recommendAry = $result->fetchAll();
+if(INDEXPAGE_USE_API){
+    $recommendAry = json_decode(http_curl_get('recommend') ,true);
+}else{
+    $sql = 'select name from `recommend` LIMIT 20';
+    $result = $pdo->prepare( $sql );
+    $result->execute();
+    $recommendAry = $result->fetchAll();
+}
 //var_dump($recommendAry);
 
 ?>
@@ -27,7 +30,7 @@ $recommendAry = json_decode(http_curl_get('recommend') ,true);
                         <?php
                             $recommendNums = count($recommendAry);
                             for($i=0;$i<$recommendNums;$i++){
-                                $recommendName = $recommendAry[$i]['Name'];
+                                $recommendName = INDEXPAGE_USE_API ? $recommendAry[$i]['Name'] : $recommendAry[$i]['name'];
                                 echo "<a href='".getProcessUrl("search.php?keyword=".$recommendName)."' title='{$recommendName}'><span>{$recommendName}</span></a>";
                             }
                         ?>
