@@ -42,8 +42,9 @@ define('DBNAME','数据库名');
 // 定义友情链接
 // 格式：网址=>网站名
 $friendLink = array(
-    '//btlet.com'   => 'BtLet',
-    '//laoji.org'   => '老季博客',
+    '//btlet.com'           => 'BtLet',
+    '//laoji.org'           => '老季博客',
+    '//image.btlet.com'     => 'BtLet图床',
 );
 
 
